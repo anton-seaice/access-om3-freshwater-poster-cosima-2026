@@ -1,0 +1,15 @@
+Copyright 2026 Anton Steketee, Andrew Kiss, Dougie Squire and Ezhil Kannadasan
+
+This repository is licensed in parts:
+
+- Poster content (poster.tex, the PDF built from it, and figs/) is licensed
+  under the Creative Commons Attribution 4.0 International licence
+  (CC BY 4.0). See LICENSES/CC-BY-4.0.txt or
+  https://creativecommons.org/licenses/by/4.0/
+
+- Code in scripts/ is licensed under the Apache License, Version 2.0.
+  See LICENSES/Apache-2.0.txt or https://www.apache.org/licenses/LICENSE-2.0
+
+- Logos in logos/ (ACCESS, NCRIS, and partner institution logos) are the
+  property of their respective organisations and are not covered by either
+  licence. They are included only to reproduce the ACCESS-NRI poster template.

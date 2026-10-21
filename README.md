@@ -53,3 +53,9 @@ python scripts/river_fig.py "Yenisei, June" 78 86 70.5 74 output002 1 figs/river
 ```
 
 `plot_impacts.py` also writes `impact_restoring.png`, which is not on the poster.
+
+## Licence
+
+Poster content and figures: [CC BY 4.0](LICENSES/CC-BY-4.0.txt). Scripts:
+[Apache 2.0](LICENSES/Apache-2.0.txt). Logos belong to their organisations and
+are not covered by either licence. See [LICENSE](LICENSE).

@@ -1,0 +1,10 @@
+# LaTeX build outputs (rebuild with: xelatex poster.tex)
+*.aux
+*.log
+*.out
+*.synctex.gz
+poster.pdf
+# reduced model output written by scripts/
+reduced/
+__pycache__/
+*.o[0-9]*

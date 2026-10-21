@@ -1,0 +1,13 @@
+#!/bin/bash
+# Reduce test3v2/test4 output for the impacts figures. Submit from the repo root:
+#   qsub scripts/run.pbs
+#PBS -P tm70
+#PBS -q normal
+#PBS -l ncpus=4,mem=32GB,walltime=02:00:00
+#PBS -l storage=gdata/ol01+gdata/xp65+gdata/tm70+scratch/tm70
+#PBS -l wd
+#PBS -N poster_impacts
+#PBS -j oe
+module use /g/data/xp65/public/modules
+module load conda/analysis3
+python -W ignore scripts/compute_impacts.py reduced

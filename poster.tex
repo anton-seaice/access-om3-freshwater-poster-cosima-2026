@@ -172,21 +172,22 @@ and river flows built from observations and a weather model (Tsujino et al.\
 \end{tikzpicture}\par}
 \vspace{\tl{1}}
 {\setfs{10}{12}\color{black!70}Light boxes are read from the forcing; dark
-boxes are interactive models. The balance and spreading live in the CMEPS
-mediator, the only component that sees every flux; the seasonal iceberg cycle
-is applied where the runoff is read in (DROF).\par}
+boxes are interactive models. Balance and spreading are done in the CMEPS
+mediator, which sees every flux; the seasonal iceberg cycle in the runoff
+reader (DROF).\par}
 
 \posterhead[1]{Global freshwater balance}
 \firstin{25\,km IAF test4; 8\,km RYF test2}
-Each coupling step, precipitation $P$ is scaled so that runoff $R$ and
-evaporation $E$ into ocean + sea ice sum to zero:
+Model evaporation doesn't match the prescribed rain and runoff, so the
+ocean and sea ice slowly gain or lose water and global salinity drifts. Throughout the run, precipitation $P$ is scaled so
+that $P$, runoff $R$ and evaporation $E$ into ocean + sea ice sum to zero:
 \[ sP + R + E = 0 \quad\Rightarrow\quad s = 1 - \frac{P+R+E}{P} \]
-Unlike an offset, scaling can't create negative rain. This scaling accounts for water
-held in sea ice and snow, unlike the base case.
+Unlike an offset, scaling can't create negative rain, and unlike the base case
+it counts water held in sea ice and snow.
 \posterfig{figs/fw_mass_constant.png}{Total ocean + sea ice mass (bottom)
 oscillates without the balance (base) and is constant with it (new).}
 
-\vspace{\tl{6}}
+\vspace{\tl{4}}
 {\setfs{10}{12}\color{black!70}\textbf{References}\par\vspace{\tl{1}}
 Schmidt, G.\,A., Mankoff, K.\,D., Bamber, J.\,L., et al.\ (2025). Datasets and
 protocols for including anomalous freshwater from melting ice sheets in climate

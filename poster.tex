@@ -98,6 +98,8 @@
   \textsuperscript{2}Research School of Earth Sciences, Australian National University,
   Canberra, Australia}
 
+\input{qr_docs.tex}   % \qrdocs: QR code for the ACCESS-OM3 configs docs (scripts/make_qr.py)
+
 \begin{document}
 % ================================================================ template frame
 \begin{tikzpicture}[remember picture, overlay, x=\pscale mm, y=-\pscale mm,
@@ -131,6 +133,14 @@
     {\textbf{AI declaration:} Claude (Anthropic) assisted with poster
      preparation and parts of the software development. All content was
      reviewed by the authors.};
+
+  % QR code to the ACCESS-OM3 configs docs (bottom left, beside the partner logos)
+  \begin{scope}[shift={(19.75,507)}, x=\pscale*24 mm, y=-\pscale*24 mm]
+    \qrdocs
+  \end{scope}
+  \node[anchor=north west, inner sep=0, text width=\tl{26}, align=left,
+        font=\setfs{11}{13}, text=black!70] at (47.5,508)
+    {Scan for the\\ACCESS-OM3\\configs and\\docs};
 
   % footer: colour bar, partner logos, NCRIS
   \node[anchor=north west, inner sep=0] at (87.75,488.16)
@@ -179,7 +189,7 @@ reader (DROF).\par}
 \posterhead[1]{Global freshwater balance}
 \firstin{25\,km IAF test4; 8\,km RYF test2}
 Model evaporation doesn't match the prescribed rain and runoff, so the
-ocean and sea ice slowly gain or lose water and global salinity drifts. Throughout the run, precipitation $P$ is scaled so
+ocean and sea ice slowly gain or lose water and global salinity would drift. Throughout the run, precipitation $P$ is scaled so
 that $P$, runoff $R$ and evaporation $E$ into ocean + sea ice sum to zero:
 \[ sP + R + E = 0 \quad\Rightarrow\quad s = 1 - \frac{P+R+E}{P} \]
 Unlike an offset, scaling can't create negative rain, and unlike the base case

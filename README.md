@@ -54,6 +54,10 @@ python scripts/river_fig.py "Yenisei, June" 78 86 70.5 74 output002 1 figs/river
 
 `plot_impacts.py` also writes `impact_restoring.png`, which is not on the poster.
 
+The QR code (`qr_docs.tex`, linking to https://access-om3-configs.access-hive.org.au/)
+is plain TikZ, so no LaTeX QR package is needed. Regenerate it with
+`python scripts/make_qr.py <url> qr_docs.tex` (needs the `segno` Python package).
+
 ## Licence
 
 Poster content and figures: [CC BY 4.0](LICENSES/CC-BY-4.0.txt). Scripts:
